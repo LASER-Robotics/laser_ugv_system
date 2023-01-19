@@ -1,0 +1,132 @@
+[0.056s] Invoking command in '/home/augusto/Documentos/ugv_system/build/ugv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/augusto/Documentos/ugv_system/src/ugv_simulation -DCMAKE_INSTALL_PREFIX=/home/augusto/Documentos/ugv_system/install/ugv_simulation
+[0.302s] -- The C compiler identification is GNU 11.3.0
+[0.561s] -- The CXX compiler identification is GNU 11.3.0
+[0.575s] -- Detecting C compiler ABI info
+[0.819s] -- Detecting C compiler ABI info - done
+[0.834s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.835s] -- Detecting C compile features
+[0.835s] -- Detecting C compile features - done
+[0.839s] -- Detecting CXX compiler ABI info
+[1.005s] -- Detecting CXX compiler ABI info - done
+[1.024s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.024s] -- Detecting CXX compile features
+[1.024s] -- Detecting CXX compile features - done
+[1.035s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.035s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[1.035s]   does not match the name of the calling package (gazebo).  This can lead to
+[1.048s]   problems in calling code that expects `find_package` result variables
+[1.048s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.048s] Call Stack (most recent call first):
+[1.051s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[1.052s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[1.052s]   CMakeLists.txt:8 (find_package)
+[1.052s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.052s] [0m
+[1.052s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.082s] -- Checking for module 'bullet>=2.82'
+[1.107s] --   Found bullet, version 3.05
+[1.524s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.701s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.739s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[2.272s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[2.319s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.336s] -- Looking for ignition-math6 -- found version 6.13.0
+[2.343s] -- Searching for dependencies of ignition-math6
+[2.345s] -- Looking for OGRE...
+[2.345s] -- OGRE_PREFIX_WATCH changed.
+[2.365s] -- Checking for module 'OGRE'
+[2.385s] --   Found OGRE, version 1.9.0
+[2.435s] -- Found Ogre Ghadamon (1.9.0)
+[2.443s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.486s] -- Looking for OGRE_Paging...
+[2.505s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.505s] -- Looking for OGRE_Terrain...
+[2.513s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.518s] -- Looking for OGRE_Property...
+[2.521s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.521s] -- Looking for OGRE_RTShaderSystem...
+[2.532s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.534s] -- Looking for OGRE_Volume...
+[2.542s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.542s] -- Looking for OGRE_Overlay...
+[2.544s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.730s] -- Looking for ignition-math6 -- found version 6.13.0
+[2.732s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.733s] -- Searching for dependencies of ignition-transport8
+[2.763s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[2.770s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.776s] -- Checking for module 'libzmq >= 4'
+[2.794s] --   Found libzmq , version 4.3.4
+[2.846s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.856s] -- Checking for module 'uuid'
+[2.876s] --   Found uuid, version 2.37.2
+[2.937s] -- Found UUID: TRUE  
+[2.937s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.937s] -- Searching for dependencies of ignition-msgs5
+[2.963s] -- Looking for ignition-math6 -- found version 6.13.0
+[2.976s] -- Checking for module 'tinyxml2'
+[2.994s] --   Found tinyxml2, version 9.0.0
+[3.055s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.058s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.058s] -- Searching for dependencies of ignition-common3
+[3.058s] -- Looking for dlfcn.h - found
+[3.059s] -- Looking for libdl - found
+[3.061s] -- Found DL: TRUE  
+[3.079s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[3.080s] -- Searching for <ignition-common3> component [graphics]
+[3.083s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[3.087s] -- Searching for dependencies of ignition-common3-graphics
+[3.087s] -- Looking for ignition-math6 -- found version 6.13.0
+[3.088s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[3.088s] -- Searching for dependencies of ignition-fuel_tools4
+[3.214s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[3.234s] -- Checking for module 'jsoncpp'
+[3.243s] --   Found jsoncpp, version 1.9.5
+[3.290s] -- Found JSONCPP: TRUE  
+[3.299s] -- Checking for module 'libzip'
+[3.312s] --   Found libzip, version 1.7.3
+[3.366s] -- Found ZIP: TRUE  
+[3.368s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.369s] -- Looking for ignition-math6 -- found version 6.13.0
+[3.369s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.369s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.626s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[3.775s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.932s] -- Added test 'lint_cmake' to check CMake code style
+[3.941s] -- Added test 'xmllint' to check XML markup files
+[3.941s] -- Configuring done
+[3.943s] -- Generating done
+[3.945s] -- Build files have been written to: /home/augusto/Documentos/ugv_system/build/ugv_simulation
+[3.972s] Invoked command in '/home/augusto/Documentos/ugv_system/build/ugv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/augusto/Documentos/ugv_system/src/ugv_simulation -DCMAKE_INSTALL_PREFIX=/home/augusto/Documentos/ugv_system/install/ugv_simulation
+[3.973s] Invoking command in '/home/augusto/Documentos/ugv_system/build/ugv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/augusto/Documentos/ugv_system/build/ugv_simulation -- -j2 -l2
+[4.082s] Invoked command in '/home/augusto/Documentos/ugv_system/build/ugv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/augusto/Documentos/ugv_system/build/ugv_simulation -- -j2 -l2
+[4.131s] Invoking command in '/home/augusto/Documentos/ugv_system/build/ugv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/augusto/Documentos/ugv_system/build/ugv_simulation
+[4.165s] -- Install configuration: ""
+[4.165s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/launch
+[4.165s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description
+[4.166s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/oni.urdf.xacro
+[4.166s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/sensors
+[4.166s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/sensors/laser_sensor.urdf.xacro
+[4.166s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/sensors/imu_sensor.urdf.xacro
+[4.166s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/meshes
+[4.166s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/meshes/fr_wheel.dae
+[4.183s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/meshes/rplidar.dae
+[4.184s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/meshes/fl_wheel.dae
+[4.194s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/meshes/body_OC.dae
+[4.195s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/worlds
+[4.195s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ament_index/resource_index/package_run_dependencies/ugv_simulation
+[4.195s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ament_index/resource_index/parent_prefix_path/ugv_simulation
+[4.196s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/environment/ament_prefix_path.sh
+[4.196s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/environment/ament_prefix_path.dsv
+[4.196s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/environment/path.sh
+[4.196s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/environment/path.dsv
+[4.196s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/local_setup.bash
+[4.197s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/local_setup.sh
+[4.197s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/local_setup.zsh
+[4.203s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/local_setup.dsv
+[4.204s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.dsv
+[4.205s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ament_index/resource_index/packages/ugv_simulation
+[4.205s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/cmake/ugv_simulationConfig.cmake
+[4.205s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/cmake/ugv_simulationConfig-version.cmake
+[4.205s] -- Installing: /home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.xml
+[4.219s] Invoked command in '/home/augusto/Documentos/ugv_system/build/ugv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/augusto/Documentos/ugv_system/build/ugv_simulation

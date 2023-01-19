@@ -1,0 +1,15 @@
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ament_index/resource_index/package_run_dependencies/ugv_navigation
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ament_index/resource_index/parent_prefix_path/ugv_navigation
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/environment/ament_prefix_path.sh
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/environment/ament_prefix_path.dsv
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/environment/path.sh
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/environment/path.dsv
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/local_setup.bash
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/local_setup.sh
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/local_setup.zsh
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/local_setup.dsv
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.dsv
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ament_index/resource_index/packages/ugv_navigation
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/cmake/ugv_navigationConfig.cmake
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/cmake/ugv_navigationConfig-version.cmake
+/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.xml

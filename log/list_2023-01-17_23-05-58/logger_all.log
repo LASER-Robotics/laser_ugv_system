@@ -1,0 +1,66 @@
+[2.000s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/augusto/Documentos/ugv_system']
+[2.001s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/augusto/Documentos/ugv_system'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f2e6e1519f0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7f2e6e1064d0>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7f2e6e1064d0>>)
+[2.067s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.068s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.068s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.068s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.068s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.068s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/augusto/Documentos/ugv_system'
+[2.068s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extensions ['ignore', 'ignore_ament_install']
+[2.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extension 'ignore'
+[2.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extension 'ignore_ament_install'
+[2.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extensions ['colcon_pkg']
+[2.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extension 'colcon_pkg'
+[2.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extensions ['colcon_meta']
+[2.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extension 'colcon_meta'
+[2.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extensions ['ros']
+[2.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extension 'ros'
+[2.108s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extensions ['cmake', 'python']
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extension 'cmake'
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extension 'python'
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extensions ['python_setup_py']
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system) by extension 'python_setup_py'
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/build) by extensions ['ignore', 'ignore_ament_install']
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/build) by extension 'ignore'
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/build) ignored
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/install) by extensions ['ignore', 'ignore_ament_install']
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/install) by extension 'ignore'
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/install) ignored
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/log) by extensions ['ignore', 'ignore_ament_install']
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/log) by extension 'ignore'
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/log) ignored
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extensions ['ignore', 'ignore_ament_install']
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extension 'ignore'
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extension 'ignore_ament_install'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extensions ['colcon_pkg']
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extension 'colcon_pkg'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extensions ['colcon_meta']
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extension 'colcon_meta'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extensions ['ros']
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extension 'ros'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extensions ['cmake', 'python']
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extension 'cmake'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extension 'python'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extensions ['python_setup_py']
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src) by extension 'python_setup_py'
+[2.112s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_navigation) by extensions ['ignore', 'ignore_ament_install']
+[2.112s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_navigation) by extension 'ignore'
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_navigation) by extension 'ignore_ament_install'
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_navigation) by extensions ['colcon_pkg']
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_navigation) by extension 'colcon_pkg'
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_navigation) by extensions ['colcon_meta']
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_navigation) by extension 'colcon_meta'
+[2.118s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_navigation) by extensions ['ros']
+[2.121s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_navigation) by extension 'ros'
+[2.132s] DEBUG:colcon.colcon_core.package_identification:Package '/home/augusto/Documentos/ugv_system/src/ugv_navigation' with type 'ros.ament_cmake' and name 'ugv_navigation'
+[2.132s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_simulation) by extensions ['ignore', 'ignore_ament_install']
+[2.132s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_simulation) by extension 'ignore'
+[2.132s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_simulation) by extension 'ignore_ament_install'
+[2.132s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_simulation) by extensions ['colcon_pkg']
+[2.132s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_simulation) by extension 'colcon_pkg'
+[2.132s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_simulation) by extensions ['colcon_meta']
+[2.133s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_simulation) by extension 'colcon_meta'
+[2.133s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_simulation) by extensions ['ros']
+[2.133s] Level 1:colcon.colcon_core.package_identification:_identify(/home/augusto/Documentos/ugv_system/src/ugv_simulation) by extension 'ros'
+[2.133s] DEBUG:colcon.colcon_core.package_identification:Package '/home/augusto/Documentos/ugv_system/src/ugv_simulation' with type 'ros.ament_cmake' and name 'ugv_simulation'
+[2.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
