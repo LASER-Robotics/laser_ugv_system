@@ -1,0 +1,6 @@
+Invoking command in '/home/gabs/ugv_system/build/ugv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/gabs/ugv_system/src/ugv_simulation -DCMAKE_INSTALL_PREFIX=/home/gabs/ugv_system/install/ugv_simulation
+Invoked command in '/home/gabs/ugv_system/build/ugv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/gabs/ugv_system/src/ugv_simulation -DCMAKE_INSTALL_PREFIX=/home/gabs/ugv_system/install/ugv_simulation
+Invoking command in '/home/gabs/ugv_system/build/ugv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabs/ugv_system/build/ugv_simulation -- -j4 -l4
+Invoked command in '/home/gabs/ugv_system/build/ugv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabs/ugv_system/build/ugv_simulation -- -j4 -l4
+Invoking command in '/home/gabs/ugv_system/build/ugv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabs/ugv_system/build/ugv_simulation
+Invoked command in '/home/gabs/ugv_system/build/ugv_simulation' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabs/ugv_system/build/ugv_simulation

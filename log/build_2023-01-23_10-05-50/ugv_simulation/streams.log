@@ -1,0 +1,110 @@
+[0.018s] Invoking command in '/home/gabs/ugv_system/build/ugv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/gabs/ugv_system/src/ugv_simulation -DCMAKE_INSTALL_PREFIX=/home/gabs/ugv_system/install/ugv_simulation
+[0.741s] -- The C compiler identification is GNU 11.3.0
+[1.687s] -- The CXX compiler identification is GNU 11.3.0
+[1.776s] -- Detecting C compiler ABI info
+[2.211s] -- Detecting C compiler ABI info - done
+[2.225s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.296s] -- Detecting C compile features
+[2.346s] -- Detecting C compile features - done
+[2.349s] -- Detecting CXX compiler ABI info
+[3.114s] -- Detecting CXX compiler ABI info - done
+[3.124s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.124s] -- Detecting CXX compile features
+[3.125s] -- Detecting CXX compile features - done
+[3.358s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[3.358s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[3.358s]   does not match the name of the calling package (gazebo).  This can lead to
+[3.358s]   problems in calling code that expects `find_package` result variables
+[3.358s]   (e.g., `_FOUND`) to follow a certain pattern.
+[3.358s] Call Stack (most recent call first):
+[3.358s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[3.358s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[3.358s]   CMakeLists.txt:8 (find_package)
+[3.358s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.359s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[3.359s] [0m
+[3.363s] -- Checking for module 'bullet>=2.82'
+[3.436s] --   Found bullet, version 3.05
+[4.185s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[4.336s] -- Found assimp: /usr/include (found version "5.2.0") 
+[4.431s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[4.805s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[4.829s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[4.835s] -- Looking for ignition-math6 -- found version 6.12.0
+[4.844s] -- Searching for dependencies of ignition-math6
+[4.846s] -- Looking for OGRE...
+[4.847s] -- OGRE_PREFIX_WATCH changed.
+[4.853s] -- Checking for module 'OGRE'
+[4.870s] --   Found OGRE, version 1.9.0
+[4.913s] -- Found Ogre Ghadamon (1.9.0)
+[4.928s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[4.941s] -- Looking for OGRE_Paging...
+[4.961s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[4.961s] -- Looking for OGRE_Terrain...
+[4.976s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[4.976s] -- Looking for OGRE_Property...
+[4.985s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[4.985s] -- Looking for OGRE_RTShaderSystem...
+[4.994s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[4.994s] -- Looking for OGRE_Volume...
+[5.034s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[5.035s] -- Looking for OGRE_Overlay...
+[5.055s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[5.256s] -- Looking for ignition-math6 -- found version 6.12.0
+[5.260s] -- Looking for ignition-transport8 -- found version 8.2.1
+[5.261s] -- Searching for dependencies of ignition-transport8
+[5.282s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[5.296s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[5.302s] -- Checking for module 'libzmq >= 4'
+[5.319s] --   Found libzmq , version 4.3.4
+[5.374s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[5.382s] -- Checking for module 'uuid'
+[5.401s] --   Found uuid, version 2.37.2
+[5.449s] -- Found UUID: TRUE  
+[5.453s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.453s] -- Searching for dependencies of ignition-msgs5
+[5.477s] -- Looking for ignition-math6 -- found version 6.12.0
+[5.484s] -- Checking for module 'tinyxml2'
+[5.524s] --   Found tinyxml2, version 9.0.0
+[5.572s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.577s] -- Looking for ignition-common3 -- found version 3.14.0
+[5.578s] -- Searching for dependencies of ignition-common3
+[5.578s] -- Looking for dlfcn.h - found
+[5.580s] -- Looking for libdl - found
+[5.582s] -- Found DL: TRUE  
+[5.597s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[5.598s] -- Searching for <ignition-common3> component [graphics]
+[5.601s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[5.602s] -- Searching for dependencies of ignition-common3-graphics
+[5.602s] -- Looking for ignition-math6 -- found version 6.12.0
+[5.607s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[5.607s] -- Searching for dependencies of ignition-fuel_tools4
+[5.723s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[5.735s] -- Checking for module 'jsoncpp'
+[5.754s] --   Found jsoncpp, version 1.9.5
+[5.798s] -- Found JSONCPP: TRUE  
+[5.808s] -- Checking for module 'libzip'
+[5.826s] --   Found libzip, version 1.7.3
+[5.872s] -- Found ZIP: TRUE  
+[5.873s] -- Looking for ignition-common3 -- found version 3.14.0
+[5.873s] -- Looking for ignition-math6 -- found version 6.12.0
+[5.874s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.882s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.120s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[6.253s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.368s] -- Added test 'lint_cmake' to check CMake code style
+[6.370s] -- Added test 'xmllint' to check XML markup files
+[6.371s] -- Configuring done
+[6.377s] -- Generating done
+[6.380s] -- Build files have been written to: /home/gabs/ugv_system/build/ugv_simulation
+[6.395s] Invoked command in '/home/gabs/ugv_system/build/ugv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/gabs/ugv_system/src/ugv_simulation -DCMAKE_INSTALL_PREFIX=/home/gabs/ugv_system/install/ugv_simulation
+[6.398s] Invoking command in '/home/gabs/ugv_system/build/ugv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabs/ugv_system/build/ugv_simulation -- -j4 -l4
+[6.455s] Invoked command in '/home/gabs/ugv_system/build/ugv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabs/ugv_system/build/ugv_simulation -- -j4 -l4
+[6.493s] Invoking command in '/home/gabs/ugv_system/build/ugv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabs/ugv_system/build/ugv_simulation
+[6.502s] -- Install configuration: ""
+[6.502s] [31mCMake Error at cmake_install.cmake:46 (file):
+[6.502s]   file INSTALL cannot find "/home/gabs/ugv_system/src/ugv_simulation/launch":
+[6.502s]   No such file or directory.
+[6.502s] 
+[6.502s] [0m
+[6.504s] Invoked command in '/home/gabs/ugv_system/build/ugv_simulation' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabs/ugv_system/build/ugv_simulation

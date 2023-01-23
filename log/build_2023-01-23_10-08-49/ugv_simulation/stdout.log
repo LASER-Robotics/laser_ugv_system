@@ -1,0 +1,12 @@
+-- Install configuration: ""
+-- Installing: /home/gabs/ugv_system/install/ugv_simulation/share/ugv_simulation/launch
+-- Installing: /home/gabs/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description
+-- Installing: /home/gabs/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/sensors
+-- Installing: /home/gabs/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/sensors/imu_sensor.urdf.xacro
+-- Installing: /home/gabs/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/sensors/laser_sensor.urdf.xacro
+-- Installing: /home/gabs/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/meshes
+-- Installing: /home/gabs/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/meshes/rplidar.dae
+-- Installing: /home/gabs/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/meshes/fr_wheel.dae
+-- Installing: /home/gabs/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/meshes/body_OC.dae
+-- Installing: /home/gabs/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/meshes/fl_wheel.dae
+-- Installing: /home/gabs/ugv_system/install/ugv_simulation/share/ugv_simulation/robots_description/oni.urdf.xacro
