@@ -1,4 +1,0 @@
-source;share/ugv_navigation/local_setup.bash
-source;share/ugv_navigation/local_setup.dsv
-source;share/ugv_navigation/local_setup.sh
-source;share/ugv_navigation/local_setup.zsh
