@@ -1,9 +1,0 @@
-/home/gabs/ugv_system/build/ugv_simulation/CMakeFiles/uninstall.dir
-/home/gabs/ugv_system/build/ugv_simulation/CMakeFiles/ugv_simulation_uninstall.dir
-/home/gabs/ugv_system/build/ugv_simulation/CMakeFiles/test.dir
-/home/gabs/ugv_system/build/ugv_simulation/CMakeFiles/edit_cache.dir
-/home/gabs/ugv_system/build/ugv_simulation/CMakeFiles/rebuild_cache.dir
-/home/gabs/ugv_system/build/ugv_simulation/CMakeFiles/list_install_components.dir
-/home/gabs/ugv_system/build/ugv_simulation/CMakeFiles/install.dir
-/home/gabs/ugv_system/build/ugv_simulation/CMakeFiles/install/local.dir
-/home/gabs/ugv_system/build/ugv_simulation/CMakeFiles/install/strip.dir
