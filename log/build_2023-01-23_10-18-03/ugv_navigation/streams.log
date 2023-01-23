@@ -1,0 +1,20 @@
+[0.429s] Invoking command in '/home/gabs/ugv_system/build/ugv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabs/ugv_system/build/ugv_navigation -- -j4 -l4
+[0.506s] Invoked command in '/home/gabs/ugv_system/build/ugv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabs/ugv_system/build/ugv_navigation -- -j4 -l4
+[0.557s] Invoking command in '/home/gabs/ugv_system/build/ugv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabs/ugv_system/build/ugv_navigation
+[0.572s] -- Install configuration: ""
+[0.572s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ament_index/resource_index/package_run_dependencies/ugv_navigation
+[0.572s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ament_index/resource_index/parent_prefix_path/ugv_navigation
+[0.572s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/environment/ament_prefix_path.sh
+[0.572s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/environment/ament_prefix_path.dsv
+[0.572s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/environment/path.sh
+[0.572s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/environment/path.dsv
+[0.573s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/local_setup.bash
+[0.573s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/local_setup.sh
+[0.573s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/local_setup.zsh
+[0.573s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/local_setup.dsv
+[0.573s] -- Installing: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/package.dsv
+[0.573s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ament_index/resource_index/packages/ugv_navigation
+[0.573s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/cmake/ugv_navigationConfig.cmake
+[0.573s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/cmake/ugv_navigationConfig-version.cmake
+[0.573s] -- Up-to-date: /home/gabs/ugv_system/install/ugv_navigation/share/ugv_navigation/package.xml
+[0.600s] Invoked command in '/home/gabs/ugv_system/build/ugv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabs/ugv_system/build/ugv_navigation
