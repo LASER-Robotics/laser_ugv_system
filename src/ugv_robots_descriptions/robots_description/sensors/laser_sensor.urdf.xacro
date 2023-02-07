@@ -5,7 +5,7 @@
             <visual>
                 <origin xyz="0 0 -0.025" rpy="0 0 ${M_PI/2}"/>
                 <geometry>
-                    <mesh filename="file:///$(find oni_claw_gazebo)/robot_description/meshes/rplidar.dae"/>
+                    <mesh filename="file:///$(find ugv_robots_description)/robot_description/meshes/rplidar.dae"/>
                 </geometry>
                 <material name="white">
                     <color rgba="1 1 1 1"/>
@@ -26,8 +26,8 @@
             </inertial>
         </link>
 
-        <joint name="${frame_id}_to_body" type="fixed">
-            <parent link="body"/>
+        <joint name="${frame_id}_to_base_link" type="fixed">
+            <parent link="base_link"/>
             <child link="${frame_id}"/>
             <origin xyz="-0.0475 0 0.075" rpy="0 0 0"/>
         </joint>
@@ -76,6 +76,7 @@
                     <output_type>sensor_msgs/LaserScan</output_type>
                     <topicName>${topic_name}</topicName>
                     <frame_name>${frame_id}</frame_name>
+                    <output_type>sensor_msgs/LaserScan</output_type>
                 </plugin>
             </sensor>
         </gazebo>

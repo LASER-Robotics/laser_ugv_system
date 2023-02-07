@@ -21,6 +21,8 @@ sudo apt install ros-humble-desktop
 
 sudo apt install ros-dev-tools
 
+curl -sSL http://get.gazebosim.org | sh
+
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
 echo "source /ugv_system/install/local_setup.bash" >> ~/.bashrc
