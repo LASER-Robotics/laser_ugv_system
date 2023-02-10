@@ -1,7 +1,7 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
     <xacro:property name="M_PI" value="3.1415926535897931" />
-    <xacro:macro name="laser_sensor" params="update_rate ray_count min_angle max_angle min_range max_range frame_id topic_name">
-        <link name="${frame_id}">
+    <xacro:macro name="laser_sensor" params="update_rate ray_count min_angle max_angle min_range max_range pos_x pos_y pos_z">
+        <link name="base_link">
             <visual>
                 <origin xyz="0 0 -0.025" rpy="0 0 ${M_PI/2}"/>
                 <geometry>
@@ -26,13 +26,13 @@
             </inertial>
         </link>
 
-        <joint name="${frame_id}_to_base_link" type="fixed">
+        <joint name="base_link_to_base_link" type="fixed">
             <parent link="base_link"/>
-            <child link="${frame_id}"/>
+            <child link="base_link"/>
             <origin xyz="-0.0475 0 0.075" rpy="0 0 0"/>
         </joint>
 
-        <gazebo reference="${frame_id}">  
+        <gazebo reference="base_link">  
             <visual>  
                 <material>
                     <ambient>0.003 0.639 0.223 1.0</ambient>  
@@ -43,8 +43,8 @@
             </visual> 
         </gazebo>
 
-        <gazebo reference="${frame_id}">
-            <sensor type="ray" name="${frame_id}_head_hokuyo_sensor">
+        <gazebo reference="base_link">
+            <sensor type="ray" name="base_link_head_hokuyo_sensor">
                 <always_on>true</always_on>
                 <update_rate>${update_rate}</update_rate>
                 <pose>0 0 0 0 0 0</pose>
@@ -69,13 +69,13 @@
                         <stddev>0.01</stddev>
                     </noise>
                 </ray>
-                <plugin name="${frame_id}_gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_ray_sensor.so">
+                <plugin name="base_link_gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_ray_sensor.so">
                     <ros>
-                        <remapping>~/out:=${topic_name}</remapping>                                                                                                                           
+                        <remapping>~/out:=scan</remapping>                                                                                                                           
                     </ros>
                     <output_type>sensor_msgs/LaserScan</output_type>
-                    <topicName>${topic_name}</topicName>
-                    <frame_name>${frame_id}</frame_name>
+                    <topicName>scan</topicName>
+                    <frame_name>base_link</frame_name>
                     <output_type>sensor_msgs/LaserScan</output_type>
                 </plugin>
             </sensor>

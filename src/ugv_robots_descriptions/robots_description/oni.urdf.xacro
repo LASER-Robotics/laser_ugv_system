@@ -58,13 +58,13 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 -${pi/2}"/>
             <geometry>
-                <mesh filename="file:///$(find ugv_robots_description)/robot_description/meshes/oni_meshes/body_OC.dae"/>
+                <mesh filename="file:///$(find ugv_robots_description)/robot_description/meshes/oni_meshes/chassis.dae"/>
             </geometry>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 -${pi/2}"/>
             <geometry>
-                <mesh filename="file:///$(find ugv_robots_description)/robot_description/meshes/oni_meshes/body_OC.dae"/>
+                <mesh filename="file:///$(find ugv_robots_description)/robot_description/meshes/oni_meshes/chassis.dae"/>
             </geometry>
         </collision>
         <inertial>
@@ -115,8 +115,9 @@
         max_angle="6.28"
         min_range="0.12"
         max_range="8.0"
-        frame_id="lidar_link"
-        topic_name="scan"
+        pos_x="-0.0475"
+        pos_y="0"
+        pos_z="0.075"
     />
 
     <xacro:omni_drive_controller/>
