@@ -17,6 +17,7 @@ def generate_launch_description():
     model_arg = DeclareLaunchArgument(name="model", default_value=str(model_oni_path), description="Absolute path to robot urdf file")
     rviz_config_arg = DeclareLaunchArgument(name="rvizconfig", default_value=str(rviz_config_path), description="Absolute path to rviz config file")
     rviz_launch_arg = DeclareLaunchArgument(name="rviz", default_value="true", choices=["true", "false"], description="Launch rviz with basic visualization of robot")
+    use_sim_time_arg = DeclareLaunchArgument(name="use_sim_time", default_value="true", choices=["true", "false"], description='Flag to enable use_sim_time')
     
     robot_state_publisher_node = Node(
    	 	package= "robot_state_publisher" ,
@@ -38,6 +39,14 @@ def generate_launch_description():
 		name="joint_state_publisher_node_gui" ,
   		condition=IfCondition(LaunchConfiguration("gui_joint"))
    	 )
+    
+    robot_localization_node = Node(
+		package="robot_localization" ,
+		executable="ekf_node" ,
+		name="ekf_filter_node" ,
+		output="screen" ,
+		parameters=[str(get_package_share_path("ugv_simulation") / "config/ekf_oni.yaml"), {"use_sim_time" : LaunchConfiguration("use_sim_time")}] 
+	)
     
     rviz_node = Node(
    	 	package= "rviz2" ,
@@ -61,9 +70,11 @@ def generate_launch_description():
     	model_arg ,
    	 	rviz_config_arg ,
 		rviz_launch_arg ,
+  		use_sim_time_arg ,
    	 	joint_state_publisher_node ,
    	 	joint_state_publisher_gui_node ,
       	robot_state_publisher_node ,
+		robot_localization_node ,
 		gazebo_node ,
    	 	rviz_node ,	
     ])
