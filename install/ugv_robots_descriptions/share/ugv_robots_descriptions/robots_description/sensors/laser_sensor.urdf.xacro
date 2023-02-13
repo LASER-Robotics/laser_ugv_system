@@ -29,10 +29,10 @@
         <joint name="base_link_to_base_link" type="fixed">
             <parent link="base_link"/>
             <child link="laser_link"/>
-            <origin xyz="-0.0475 0 0.075" rpy="0 0 0"/>
+            <origin xyz="${pos_x} ${pos_y} ${pos_z}" rpy="0 0 0"/>
         </joint>
 
-        <gazebo reference="base_link">  
+        <gazebo reference="laser_link">  
             <visual>  
                 <material>
                     <ambient>0.003 0.639 0.223 1.0</ambient>  
@@ -43,7 +43,7 @@
             </visual> 
         </gazebo>
 
-        <gazebo reference="base_link">
+        <gazebo reference="laser_link">
             <sensor type="ray" name="base_link_head_hokuyo_sensor">
                 <always_on>true</always_on>
                 <update_rate>${update_rate}</update_rate>
@@ -75,7 +75,7 @@
                     </ros>
                     <output_type>sensor_msgs/LaserScan</output_type>
                     <topicName>scan</topicName>
-                    <frame_name>lidar_link</frame_name>
+                    <frame_name>laser_link</frame_name>
                     <output_type>sensor_msgs/LaserScan</output_type>
                 </plugin>
             </sensor>

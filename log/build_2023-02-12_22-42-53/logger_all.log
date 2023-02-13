@@ -1,0 +1,264 @@
+[0.354s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.354s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f100a8f8520>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f100b25a9b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f100b25a9b0>>)
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.388s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.389s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.389s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/augusto/Documentos/ugv_system'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_navigation) by extension 'ignore'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_navigation) by extension 'ignore_ament_install'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_navigation) by extensions ['colcon_pkg']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_navigation) by extension 'colcon_pkg'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_navigation) by extensions ['colcon_meta']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_navigation) by extension 'colcon_meta'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_navigation) by extensions ['ros']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_navigation) by extension 'ros'
+[0.406s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_navigation' with type 'ros.ament_cmake' and name 'ugv_navigation'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_robots_descriptions) by extensions ['ignore', 'ignore_ament_install']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_robots_descriptions) by extension 'ignore'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_robots_descriptions) by extension 'ignore_ament_install'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_robots_descriptions) by extensions ['colcon_pkg']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_robots_descriptions) by extension 'colcon_pkg'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_robots_descriptions) by extensions ['colcon_meta']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_robots_descriptions) by extension 'colcon_meta'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_robots_descriptions) by extensions ['ros']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_robots_descriptions) by extension 'ros'
+[0.407s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_robots_descriptions' with type 'ros.ament_cmake' and name 'ugv_robots_descriptions'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_simulation) by extension 'ignore'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_simulation) by extension 'ignore_ament_install'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_simulation) by extensions ['colcon_pkg']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_simulation) by extension 'colcon_pkg'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_simulation) by extensions ['colcon_meta']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_simulation) by extension 'colcon_meta'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_simulation) by extensions ['ros']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_simulation) by extension 'ros'
+[0.408s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_simulation' with type 'ros.ament_cmake' and name 'ugv_simulation'
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.409s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.409s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.434s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.434s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.437s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/augusto/Documentos/ugv_system/install
+[0.438s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/augusto/Documentos/Oni-Claw/install
+[0.441s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 328 installed packages in /opt/ros/humble
+[0.442s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'ugv_navigation' build argument 'cmake_args' from command line to 'None'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'ugv_navigation' build argument 'cmake_target' from command line to 'None'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'ugv_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'ugv_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'ugv_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'ugv_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'ugv_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'ugv_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'ugv_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.522s] DEBUG:colcon.colcon_core.verb:Building package 'ugv_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/augusto/Documentos/ugv_system/build/ugv_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/augusto/Documentos/ugv_system/install/ugv_navigation', 'merge_install': False, 'path': '/home/augusto/Documentos/ugv_system/src/ugv_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'ugv_robots_descriptions' build argument 'cmake_args' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'ugv_robots_descriptions' build argument 'cmake_target' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'ugv_robots_descriptions' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'ugv_robots_descriptions' build argument 'cmake_clean_cache' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'ugv_robots_descriptions' build argument 'cmake_clean_first' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'ugv_robots_descriptions' build argument 'cmake_force_configure' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'ugv_robots_descriptions' build argument 'ament_cmake_args' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'ugv_robots_descriptions' build argument 'catkin_cmake_args' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'ugv_robots_descriptions' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.523s] DEBUG:colcon.colcon_core.verb:Building package 'ugv_robots_descriptions' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/augusto/Documentos/ugv_system/build/ugv_robots_descriptions', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions', 'merge_install': False, 'path': '/home/augusto/Documentos/ugv_system/src/ugv_robots_descriptions', 'symlink_install': False, 'test_result_base': None}
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'ugv_simulation' build argument 'cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'ugv_simulation' build argument 'cmake_target' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'ugv_simulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'ugv_simulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'ugv_simulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'ugv_simulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'ugv_simulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'ugv_simulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'ugv_simulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.525s] DEBUG:colcon.colcon_core.verb:Building package 'ugv_simulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/augusto/Documentos/ugv_system/build/ugv_simulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/augusto/Documentos/ugv_system/install/ugv_simulation', 'merge_install': False, 'path': '/home/augusto/Documentos/ugv_system/src/ugv_simulation', 'symlink_install': False, 'test_result_base': None}
+[0.525s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.529s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.529s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/augusto/Documentos/ugv_system/src/ugv_navigation' with build type 'ament_cmake'
+[0.529s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/augusto/Documentos/ugv_system/src/ugv_navigation'
+[0.533s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.533s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.533s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.540s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/augusto/Documentos/ugv_system/src/ugv_robots_descriptions' with build type 'ament_cmake'
+[0.541s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/augusto/Documentos/ugv_system/src/ugv_robots_descriptions'
+[0.542s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.542s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.552s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/augusto/Documentos/ugv_system/build/ugv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/augusto/Documentos/ugv_system/build/ugv_navigation -- -j2 -l2
+[0.560s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/augusto/Documentos/ugv_system/build/ugv_robots_descriptions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/augusto/Documentos/ugv_system/build/ugv_robots_descriptions -- -j2 -l2
+[0.609s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/augusto/Documentos/ugv_system/build/ugv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/augusto/Documentos/ugv_system/build/ugv_navigation -- -j2 -l2
+[0.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/augusto/Documentos/ugv_system/build/ugv_robots_descriptions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/augusto/Documentos/ugv_system/build/ugv_robots_descriptions -- -j2 -l2
+[0.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/augusto/Documentos/ugv_system/build/ugv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/augusto/Documentos/ugv_system/build/ugv_navigation
+[0.663s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/augusto/Documentos/ugv_system/build/ugv_robots_descriptions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/augusto/Documentos/ugv_system/build/ugv_robots_descriptions
+[0.672s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_navigation)
+[0.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/augusto/Documentos/ugv_system/build/ugv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/augusto/Documentos/ugv_system/build/ugv_navigation
+[0.685s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation' for CMake module files
+[0.685s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation' for CMake config files
+[0.686s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_navigation', 'cmake_prefix_path')
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/hook/cmake_prefix_path.ps1'
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/hook/cmake_prefix_path.dsv'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/hook/cmake_prefix_path.sh'
+[0.691s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation/bin'
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation/lib/pkgconfig/ugv_navigation.pc'
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation/lib/python3.10/site-packages'
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation/bin'
+[0.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.ps1'
+[0.694s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.dsv'
+[0.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.sh'
+[0.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.bash'
+[0.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.zsh'
+[0.697s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/colcon-core/packages/ugv_navigation)
+[0.698s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_robots_descriptions)
+[0.700s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions' for CMake module files
+[0.700s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/augusto/Documentos/ugv_system/build/ugv_robots_descriptions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/augusto/Documentos/ugv_system/build/ugv_robots_descriptions
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions' for CMake config files
+[0.701s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_robots_descriptions', 'cmake_prefix_path')
+[0.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/hook/cmake_prefix_path.ps1'
+[0.703s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/hook/cmake_prefix_path.dsv'
+[0.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/hook/cmake_prefix_path.sh'
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/bin'
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/lib/pkgconfig/ugv_robots_descriptions.pc'
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/lib/python3.10/site-packages'
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/bin'
+[0.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.ps1'
+[0.706s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.dsv'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.sh'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.bash'
+[0.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.zsh'
+[0.712s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/colcon-core/packages/ugv_robots_descriptions)
+[0.733s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_navigation)
+[0.734s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation' for CMake module files
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation' for CMake config files
+[0.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_navigation', 'cmake_prefix_path')
+[0.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/hook/cmake_prefix_path.ps1'
+[0.737s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/hook/cmake_prefix_path.dsv'
+[0.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/hook/cmake_prefix_path.sh'
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation/bin'
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation/lib/pkgconfig/ugv_navigation.pc'
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation/lib/python3.10/site-packages'
+[0.739s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_navigation/bin'
+[0.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.ps1'
+[0.741s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.dsv'
+[0.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.sh'
+[0.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.bash'
+[0.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/ugv_navigation/package.zsh'
+[0.742s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/augusto/Documentos/ugv_system/install/ugv_navigation/share/colcon-core/packages/ugv_navigation)
+[0.743s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/augusto/Documentos/ugv_system/src/ugv_simulation' with build type 'ament_cmake'
+[0.743s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/augusto/Documentos/ugv_system/src/ugv_simulation'
+[0.744s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.745s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/augusto/Documentos/ugv_system/build/ugv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/augusto/Documentos/ugv_system/build/ugv_simulation -- -j2 -l2
+[0.768s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_robots_descriptions)
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions' for CMake module files
+[0.771s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions' for CMake config files
+[0.771s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_robots_descriptions', 'cmake_prefix_path')
+[0.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/hook/cmake_prefix_path.ps1'
+[0.773s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/hook/cmake_prefix_path.dsv'
+[0.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/hook/cmake_prefix_path.sh'
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/bin'
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/lib/pkgconfig/ugv_robots_descriptions.pc'
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/lib/python3.10/site-packages'
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/bin'
+[0.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.ps1'
+[0.776s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.dsv'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.sh'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.bash'
+[0.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.zsh'
+[0.778s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/colcon-core/packages/ugv_robots_descriptions)
+[0.812s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/augusto/Documentos/ugv_system/build/ugv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/augusto/Documentos/ugv_system/build/ugv_simulation -- -j2 -l2
+[0.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/augusto/Documentos/ugv_system/build/ugv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/augusto/Documentos/ugv_system/build/ugv_simulation
+[1.052s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_simulation)
+[1.054s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation' for CMake module files
+[1.054s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation' for CMake config files
+[1.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_simulation', 'cmake_prefix_path')
+[1.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/hook/cmake_prefix_path.ps1'
+[1.103s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/hook/cmake_prefix_path.dsv'
+[1.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/hook/cmake_prefix_path.sh'
+[1.104s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation/bin'
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation/lib/pkgconfig/ugv_simulation.pc'
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation/lib/python3.10/site-packages'
+[1.111s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation/bin'
+[1.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.ps1'
+[1.135s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.dsv'
+[1.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.sh'
+[1.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.bash'
+[1.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.zsh'
+[1.151s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/colcon-core/packages/ugv_simulation)
+[1.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/augusto/Documentos/ugv_system/build/ugv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/augusto/Documentos/ugv_system/build/ugv_simulation
+[1.216s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_simulation)
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation' for CMake module files
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation' for CMake config files
+[1.238s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_simulation', 'cmake_prefix_path')
+[1.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/hook/cmake_prefix_path.ps1'
+[1.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/hook/cmake_prefix_path.dsv'
+[1.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/hook/cmake_prefix_path.sh'
+[1.241s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation/bin'
+[1.241s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation/lib/pkgconfig/ugv_simulation.pc'
+[1.241s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation/lib/python3.10/site-packages'
+[1.241s] Level 1:colcon.colcon_core.environment:checking '/home/augusto/Documentos/ugv_system/install/ugv_simulation/bin'
+[1.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.ps1'
+[1.243s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.dsv'
+[1.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.sh'
+[1.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.bash'
+[1.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/ugv_simulation/package.zsh'
+[1.245s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/augusto/Documentos/ugv_system/install/ugv_simulation/share/colcon-core/packages/ugv_simulation)
+[1.246s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.246s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.246s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.246s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.255s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.255s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.256s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.268s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.269s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/augusto/Documentos/ugv_system/install/local_setup.ps1'
+[1.270s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/augusto/Documentos/ugv_system/install/_local_setup_util_ps1.py'
+[1.271s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/augusto/Documentos/ugv_system/install/setup.ps1'
+[1.273s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/augusto/Documentos/ugv_system/install/local_setup.sh'
+[1.273s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/augusto/Documentos/ugv_system/install/_local_setup_util_sh.py'
+[1.274s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/augusto/Documentos/ugv_system/install/setup.sh'
+[1.275s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/augusto/Documentos/ugv_system/install/local_setup.bash'
+[1.276s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/augusto/Documentos/ugv_system/install/setup.bash'
+[1.278s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/augusto/Documentos/ugv_system/install/local_setup.zsh'
+[1.278s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/augusto/Documentos/ugv_system/install/setup.zsh'
