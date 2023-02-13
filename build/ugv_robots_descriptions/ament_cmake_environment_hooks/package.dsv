@@ -1,0 +1,4 @@
+source;share/ugv_robots_descriptions/local_setup.bash
+source;share/ugv_robots_descriptions/local_setup.dsv
+source;share/ugv_robots_descriptions/local_setup.sh
+source;share/ugv_robots_descriptions/local_setup.zsh

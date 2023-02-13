@@ -1,0 +1,64 @@
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/augusto/Documentos/ugv_system/build/ugv_robots_descriptions
+-- Install configuration: ""
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/launch
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/launch/oni_description_launch.py
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/launch/l1br_description_launch.py
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/oni.urdf.xacro
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/sensors
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/sensors/laser_sensor.urdf.xacro
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/sensors/imu_sensor.urdf.xacro
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/l1br.urdf.xacro
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/controller
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/controller/diff_drive.urdf.xacro
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/controller/omni_drive.urdf.xacro
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/controller/control_params
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/controller/control_params/l1br_control_params.yaml
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/meshes
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/meshes/rplidar.dae
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/meshes/oni_meshes
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/meshes/oni_meshes/fr_wheel.dae
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/meshes/oni_meshes/fl_wheel.dae
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/meshes/oni_meshes/chassis.dae
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/meshes/l1br_meshes
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/meshes/l1br_meshes/wheel.dae
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/meshes/l1br_meshes/tray.dae
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/robots_description/meshes/l1br_meshes/chassis.dae
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/rviz
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/rviz/rviz_minimal_visualization_config.rviz
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ament_index/resource_index/package_run_dependencies/ugv_robots_descriptions
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ament_index/resource_index/parent_prefix_path/ugv_robots_descriptions
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/environment/ament_prefix_path.sh
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/environment/ament_prefix_path.dsv
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/environment/path.sh
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/environment/path.dsv
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/local_setup.bash
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/local_setup.sh
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/local_setup.zsh
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/local_setup.dsv
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.dsv
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ament_index/resource_index/packages/ugv_robots_descriptions
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/cmake/ugv_robots_descriptionsConfig.cmake
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/cmake/ugv_robots_descriptionsConfig-version.cmake
+-- Installing: /home/augusto/Documentos/ugv_system/install/ugv_robots_descriptions/share/ugv_robots_descriptions/package.xml
