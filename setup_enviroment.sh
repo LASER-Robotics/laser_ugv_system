@@ -17,11 +17,11 @@ sudo apt update
 
 sudo apt upgrade
 
-sudo apt install ros-humble-desktop
+sudo apt -y install ros-humble-desktop
 
-sudo apt install ros-dev-tools
+sudo apt -y install ros-dev-tools
 
-sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gazebo-ros2-control
+sudo apt -y install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gazebo-ros2-control
 
 curl -sSL http://get.gazebosim.org | sh
 
@@ -32,6 +32,8 @@ echo "source /ugv_system/install/local_setup.bash" >> ~/.bashrc
 echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc
 
 cd ~/ugv_system
+
+rosdep install --from-paths src --ignore-src -r -y
 
 colcon build
 
