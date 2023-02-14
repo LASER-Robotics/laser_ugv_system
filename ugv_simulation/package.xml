@@ -4,8 +4,9 @@
   <name>ugv_simulation</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="augustoviniciud@gmail.com">augusto</maintainer>
-  <license>TODO: License declaration</license>
+  <maintainer email="augustoviniciud@gmail.com">Augusto</maintainer>
+  <maintainer email="joao.gabriel.silva.santos@academico.ufpb.br">João Gabriel</maintainer>
+  <license>tem na prefeitura</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 

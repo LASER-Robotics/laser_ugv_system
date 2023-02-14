@@ -4,7 +4,7 @@
   <name>ugv_robots_descriptions</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="augustoviniciud@gmail.com">augusto</maintainer>
+  <maintainer email="augustoviniciud@gmail.com">Augusto</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
