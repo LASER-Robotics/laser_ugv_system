@@ -21,6 +21,8 @@ sudo apt install ros-humble-desktop
 
 sudo apt install ros-dev-tools
 
+sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gazebo-ros2-control
+
 curl -sSL http://get.gazebosim.org | sh
 
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
