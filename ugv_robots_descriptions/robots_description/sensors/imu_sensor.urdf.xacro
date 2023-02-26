@@ -70,6 +70,7 @@
                 <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
                     <ros>
                         <remapping>~/out:=imu/data</remapping>
+                        <namespace>/oni</namespace>
                     </ros>
                     <bodyName>imu_link</bodyName>
                     <frameName>imu_link</frameName>

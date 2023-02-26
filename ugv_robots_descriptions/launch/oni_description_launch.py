@@ -11,7 +11,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     ugv_robots_description_path = get_package_share_path("ugv_robots_descriptions")
     model_oni_path = ugv_robots_description_path / "robots_description/oni.urdf.xacro"
-    rviz_config_path = ugv_robots_description_path / "rviz/rviz_minimal_visualization_config.rviz"
+    rviz_config_path = ugv_robots_description_path / "rviz/rviz_minimal_visualization_oni_config.rviz"
 
     gui_arg = DeclareLaunchArgument(name="gui_joint", default_value="false", choices=["true", "false"], description="Flag to enable joint_state_publisher_gui")
     model_arg = DeclareLaunchArgument(name="model", default_value=str(model_oni_path), description="Absolute path to robot urdf file")
@@ -23,6 +23,7 @@ def generate_launch_description():
    	 	package= "robot_state_publisher" ,
    	 	executable= "robot_state_publisher" ,
    	 	name= "robot_state_publisher" ,
+		namespace="oni" ,
    	 	parameters= [{"robot_description" : Command(["xacro ", LaunchConfiguration("model")])}]
     )
  
@@ -30,6 +31,7 @@ def generate_launch_description():
    		package="joint_state_publisher",
    		executable="joint_state_publisher",
    		name="joint_state_publisher_node" ,
+     	namespace="oni" ,
      	condition=UnlessCondition(LaunchConfiguration("gui_joint"))
    	 )
 
@@ -37,6 +39,7 @@ def generate_launch_description():
    		package="joint_state_publisher_gui",
    		executable="joint_state_publisher_gui",
 		name="joint_state_publisher_node_gui" ,
+		namespace="oni" ,
   		condition=IfCondition(LaunchConfiguration("gui_joint"))
    	 )
     
@@ -45,6 +48,7 @@ def generate_launch_description():
 		executable="ekf_node" ,
 		name="ekf_filter_node" ,
 		output="screen" ,
+		namespace="oni" ,
 		parameters=[str(get_package_share_path("ugv_simulation") / "config/ekf_oni.yaml"), {"use_sim_time" : LaunchConfiguration("use_sim_time")}] 
 	)
     
@@ -53,6 +57,7 @@ def generate_launch_description():
    	 	executable= "rviz2" ,
    	 	name= "rviz2" ,
    	 	output= "screen" ,
+		namespace="oni" ,
    	 	arguments=["-d", LaunchConfiguration("rvizconfig")] ,
 		condition=IfCondition(LaunchConfiguration("rviz"))
     )
@@ -62,7 +67,8 @@ def generate_launch_description():
    	 	executable= "spawn_entity.py" ,
    	 	name= "oni_spawner" ,
    	 	output= "screen" ,
-   	 	arguments= ["-topic", "/robot_description", "-entity", "oni", "-z", "0.03"]
+		namespace="oni" ,
+   	 	arguments= ["-topic", "/oni/robot_description", "-entity", "oni", "-z", "0.03"]
     )
 
     return LaunchDescription([
