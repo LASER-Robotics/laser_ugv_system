@@ -39,7 +39,8 @@
 <p>
    The Laser-Robotics is a robotics lab at the UFPB. We work with ground and
    aerial robots, we developed this plataform for academic use in the robotic
-   subject of the Computer Enginnering program. 🚧 Does not work with
+   subject of the Computer Enginnering program. 
+   <br>🚧 Does not work with
    multiple robots (yet...) 🚧
 </p>
 
