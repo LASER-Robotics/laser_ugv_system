@@ -50,7 +50,7 @@
         <visual>
             <origin xyz="0  0  0" rpy="0 0 0"/>
             <geometry>
-            <mesh filename="file:///$(find ugv_robots_description)/meshes/l1br_meshes/chassis.dae" />
+            <mesh filename="file:///$(find ugv_robots_descriptions)/robots_description/meshes/l1br_meshes/chassis.dae" />
             </geometry>
         </visual>
 
@@ -105,7 +105,7 @@
             <visual name="${prefix}_visual">
                 <origin rpy="0 0 0" xyz="0 0 0" />
                 <geometry>
-                    <mesh filename="file:///$(find ugv_robots_description)/meshes/wheel.dae" scale="1 1 1" />
+                    <mesh filename="file:///$(find ugv_robots_descriptions)/robots_description/meshes/l1br_meshes/wheel.dae" scale="1 1 1" />
                 </geometry>
             </visual>
         </link>
@@ -157,7 +157,7 @@
         <visual name="tray_visual">
             <origin xyz="0 0 0.0118" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="file:///$(find l1br)/meshes/ELV_conjuntocompleto.dae" scale="1 1 1"/>
+                <mesh filename="file:///$(find ugv_robots_descriptions)/robots_description/meshes/l1br_meshes/tray.dae" scale="1 1 1"/>
             </geometry>
         </visual>
         
@@ -302,7 +302,9 @@
 
     <xacro:piston_link/>
 
-    <xacro:imu_sensor/>
+    <xacro:imu_sensor
+        topic="l1br/imu/data"
+    />
 
     <xacro:laser_sensor
         update_rate="5"
@@ -314,6 +316,7 @@
         pos_x="0.27"
         pos_y="0"
         pos_z="0.188"
+        topic="l1br/scan"
     />
 
     <xacro:diff_drive_controller

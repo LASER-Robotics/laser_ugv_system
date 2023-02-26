@@ -1,5 +1,5 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-    <xacro:macro name="imu_sensor">
+    <xacro:macro name="imu_sensor" params="topic">
         <link name="imu_link"/>
         <joint name="imu_to_body" type="fixed">
             <parent link="base_link"/>
@@ -69,12 +69,11 @@
                 </imu>
                 <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
                     <ros>
-                        <remapping>~/out:=imu/data</remapping>
-                        <namespace>/oni</namespace>
+                        <remapping>~/out:=${topic}</remapping>
                     </ros>
                     <bodyName>imu_link</bodyName>
                     <frameName>imu_link</frameName>
-                    <topicName>imu/data</topicName>
+                    <topicName>${topic}</topicName>
                     <updateRateHZ>10.0</updateRateHZ>
                     <gaussianNoise>0.0</gaussianNoise>
                     <xyzOffset>0 0 0</xyzOffset>

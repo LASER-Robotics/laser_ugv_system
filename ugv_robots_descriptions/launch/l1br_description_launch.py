@@ -41,7 +41,21 @@ def generate_launch_description():
 		name="joint_state_publisher_node_gui" ,
 		namespace="l1br" ,
   		condition=IfCondition(LaunchConfiguration("gui_joint"))
-   	 )
+   	)
+    
+    diff_drive_spawner_node = Node(
+        package="controller_manager",
+        executable="spawner",
+        namespace="l1br" ,
+        arguments=["diff_cont"],
+    )
+
+    joint_broad_spawner_node = Node(
+        package="controller_manager",
+        executable="spawner",
+        namespace="l1br" ,
+        arguments=["joint_broad"],
+    )
     
     robot_localization_node = Node(
 		package="robot_localization" ,
@@ -80,6 +94,8 @@ def generate_launch_description():
    	 	joint_state_publisher_node ,
    	 	joint_state_publisher_gui_node ,
       	robot_state_publisher_node ,
+		diff_drive_spawner_node ,
+  		joint_broad_spawner_node ,
 		robot_localization_node ,
 		gazebo_node ,
    	 	rviz_node ,	
