@@ -23,8 +23,10 @@
       </div>
       -->
       <img src="images/gazebo-simulations.png" height="352"/>
-      <img src="images/oni.png" height="150" width="250"/>
-      <img src="images/l1br.png" height="150" width="250"/>
+      <div>
+         <img src="images/oni.png" height="150" width="250"/>
+         <img src="images/l1br.png" height="150" width="250"/>
+      </div>
    </div>
 </div>
 
