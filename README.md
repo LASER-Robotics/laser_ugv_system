@@ -10,6 +10,37 @@
    </table>
 </div>
 
+
+
+<h2>Contents<a name="Contents"></a></h2>
+<ul>
+    <li><a href="#Description">Description</a></li>
+    <li><a href="#Contents">Contents</a></li>
+    <li><a href="#Requirements">Requirements</a></li>
+</ul>
+
+
+<div align="center">
+   <img src="images/gazebo-simulations.png"  height="352" width="555"/>
+
+   <table>
+      <tr>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+      </tr>
+   </table>
+</div>
+<div align="center">
+   <img src="images/gazebo-simulations.png"  height="352" width="555"/>
+
+   <table>
+      <tr>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+      </tr>
+   </table>
+</div>
+
 <h2>Description<a name="Description"></a></h2>
 
 <p>
@@ -18,12 +49,36 @@ The Laser-Robotics is a robotics lab at the UFPB. We work with ground and aerial
 🚧 Does not work with multiple robots (yet...) 🚧
 </p>
 
-<h2>Contents<a name="Contents"></a></h2>
-<ul>
-    <li><a href="#Description">Description</a></li>
-    <li><a href="#Contents">Contents</a></li>
-    <li><a href="#Requirements">Requirements</a></li>
-</ul>
+<div align="center">
+   <img src="images/gazebo-simulations.png"  height="352" width="555"/>
+
+   <table>
+      <tr>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+      </tr>
+   </table>
+</div>
+<div align="center">
+   <img src="images/gazebo-simulations.png"  height="352" width="555"/>
+
+   <table>
+      <tr>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+      </tr>
+   </table>
+</div>
+<div align="center">
+   <img src="images/gazebo-simulations.png"  height="352" width="555"/>
+
+   <table>
+      <tr>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+      </tr>
+   </table>
+</div>
 
 <h2>Requirements<a name="Requirements"></a></h2>
 <ul>
@@ -36,22 +91,14 @@ The Laser-Robotics is a robotics lab at the UFPB. We work with ground and aerial
    <li>asdf</li>
 </ol>
 
-<a link="">asdfasdfasdf</a>
-<br>
-<b>asdf</b>
-<br>
-<i>asdf</i>
-
 
 <div align="center">
+   <img src="images/gazebo-simulations.png"  height="352" width="555"/>
+
    <table>
       <tr>
-         <th></th>
-         <th></th>
-      </tr>
-      <tr>
-         <th></th>
-         <th></th>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
       </tr>
    </table>
 </div>
