@@ -49,7 +49,7 @@ def generate_launch_description():
         executable="spawn_entity.py" ,
         name="spawn_l1br" ,  
         output="screen" ,
-        arguments= ["-topic", "/robot_description", "-entity", "l1br"] ,
+        arguments= ["-topic", "/robot_description", "-entity", "l1br", "-z", "0.03", "-x", "4", "-y", "4"] ,
     )
     
     robot_localization_node = Node(

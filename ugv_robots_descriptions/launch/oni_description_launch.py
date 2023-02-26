@@ -68,7 +68,7 @@ def generate_launch_description():
    	 	name= "oni_spawner" ,
    	 	output= "screen" ,
 		namespace="oni" ,
-   	 	arguments= ["-topic", "/oni/robot_description", "-entity", "oni", "-z", "0.03"]
+   	 	arguments= ["-topic", "/oni/robot_description", "-entity", "oni", "-z", "0.03", "-x", "4", "-y", "4"]
     )
 
     return LaunchDescription([
