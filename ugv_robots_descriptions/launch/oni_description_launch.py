@@ -10,7 +10,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     ugv_robots_description_path = get_package_share_path("ugv_robots_descriptions")
-    model_oni_path = ugv_robots_description_path / "robots_description/oni.urdf.xacro"
+    model_oni_path = ugv_robots_description_path / "robots_description/oni/urdf/oni.urdf.xacro"
     rviz_config_path = ugv_robots_description_path / "rviz/rviz_minimal_visualization_oni_config.rviz"
 
     gui_arg = DeclareLaunchArgument(name="gui_joint", default_value="false", choices=["true", "false"], description="Flag to enable joint_state_publisher_gui")
@@ -42,20 +42,6 @@ def generate_launch_description():
 		namespace="oni" ,
   		condition=IfCondition(LaunchConfiguration("gui_joint"))
    	 )
-    
-    diff_drive_spawner_node = Node(
-        package="controller_manager",
-        executable="spawner",
-        namespace="l1br" ,
-        arguments=["diff_cont"],
-    )
-
-    joint_broad_spawner_node = Node(
-        package="controller_manager",
-        executable="spawner",
-        namespace="l1br" ,
-        arguments=["joint_broad"],
-    )
     
     robot_localization_node = Node(
 		package="robot_localization" ,
@@ -93,8 +79,6 @@ def generate_launch_description():
   		use_sim_time_arg ,
    	 	joint_state_publisher_node ,
    	 	joint_state_publisher_gui_node ,
-	    diff_drive_spawner_node ,
-  		joint_broad_spawner_node ,
       	robot_state_publisher_node ,
 		robot_localization_node ,
 		gazebo_node ,

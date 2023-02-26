@@ -1,12 +1,11 @@
-<?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-    <xacro:property name="M_PI" value="3.14159265358979323846264338327950288419716939937510" />
-    <xacro:macro name="laser_sensor" params="update_rate ray_count min_angle max_angle min_range max_range topic_name pos_x pos_y pos_z">
-        <link name="lidar_link">
+    <xacro:property name="M_PI" value="3.1415926535897931" />
+    <xacro:macro name="laser_sensor" params="update_rate ray_count min_angle max_angle min_range max_range pos_x pos_y pos_z topic">
+        <link name="laser_link">
             <visual>
                 <origin xyz="0 0 -0.025" rpy="0 0 ${M_PI/2}"/>
                 <geometry>
-                    <mesh filename="file:///$(find l1br)/meshes/rplidar.dae"/>
+                    <mesh filename="file:///$(find ugv_robots_descriptions)/robots_description/l1brs/meshes/rplidar.dae"/>
                 </geometry>
                 <material name="white">
                     <color rgba="1 1 1 1"/>
@@ -27,13 +26,13 @@
             </inertial>
         </link>
 
-        <joint name="lidar_link_to_base_link" type="fixed">
+        <joint name="base_link_to_base_link" type="fixed">
             <parent link="base_link"/>
-            <child link="lidar_link"/>
+            <child link="laser_link"/>
             <origin xyz="${pos_x} ${pos_y} ${pos_z}" rpy="0 0 0"/>
         </joint>
 
-        <gazebo reference="lidar_link">  
+        <gazebo reference="laser_link">  
             <visual>  
                 <material>
                     <ambient>0.003 0.639 0.223 1.0</ambient>  
@@ -44,8 +43,8 @@
             </visual> 
         </gazebo>
 
-        <gazebo reference="lidar_link">
-            <sensor type="ray" name="lidar_link_head_hokuyo_sensor">
+        <gazebo reference="laser_link">
+            <sensor type="ray" name="base_link_head_hokuyo_sensor">
                 <always_on>true</always_on>
                 <update_rate>${update_rate}</update_rate>
                 <pose>0 0 0 0 0 0</pose>
@@ -53,10 +52,10 @@
                 <ray>
                     <scan>
                         <horizontal>
-                            <samples>${ray_count}</samples>
-                            <resolution>1</resolution>
-                            <min_angle>${min_angle}</min_angle>
-                            <max_angle>${max_angle}</max_angle>
+                        <samples>${ray_count}</samples>
+                        <resolution>1</resolution>
+                        <min_angle>${min_angle}</min_angle>
+                        <max_angle>${max_angle}</max_angle>
                         </horizontal>
                     </scan>
                     <range>
@@ -70,13 +69,14 @@
                         <stddev>0.01</stddev>
                     </noise>
                 </ray>
-                <plugin name="lidar_link_gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_ray_sensor.so">
+                <plugin name="base_link_gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_ray_sensor.so">
                     <ros>
-                        <remapping>~/out:=${topic_name}</remapping>                                                                                                                           
+                        <remapping>~/out:=${topic}</remapping>                                                                                                                           
                     </ros>
                     <output_type>sensor_msgs/LaserScan</output_type>
-                    <topicName>${topic_name}</topicName>
-                    <frame_name>lidar_link</frame_name>
+                    <topicName>${topic}</topicName>
+                    <frame_name>laser_link</frame_name>
+                    <output_type>sensor_msgs/LaserScan</output_type>
                 </plugin>
             </sensor>
         </gazebo>

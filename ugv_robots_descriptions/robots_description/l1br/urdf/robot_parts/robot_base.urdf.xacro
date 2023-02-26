@@ -29,7 +29,7 @@
         <visual>
             <origin xyz="0  0  0" rpy="0 0 0"/>
             <geometry>
-            <mesh filename="file:///$(find l1br)/meshes/EST_estrutura_m3.dae" />
+            <mesh filename="file:///$(find ugv_robots_descriptions)/robots_description/l1br/meshes/chassis.dae" />
             </geometry>
         </visual>
 
