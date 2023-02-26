@@ -1,28 +1,32 @@
+<!--
+<img src="images/Logo_Laser.png" height="352"/>
+<p style="
+   margin: 20px 0px;
+   font-size: xx-large;
+" >
+   Unmanned Ground Vehicle System
+</p>
+<div>
+   <div style="display: inline-flex; margin: 10px;">
+      <div style=" margin: 0px 5px;">
+         <img src="images/l1br.png" height="150" width="250" style="border-radius: 15px;"/>
+         <p style="font-size: x-large;">L1BR</p>
+      </div>
+      <div style=" margin: 0px 5px;">
+         <img src="images/oni.png" height="150" width="250" style="border-radius: 15px;"/>
+         <p style="font-size: x-large;">ONI</p>
+      </div>
+   </div>
+</div>
+-->
+
 <h1>Laser Unmanned Ground Vehicle System</h1>
 
 <div align="center">
    <div style="margin-bottom: 20px;">
-      <!--<img src="images/Logo_Laser.png" height="352"/>
-      <p style="
-         margin: 20px 0px;
-         font-size: xx-large;
-      " >
-         Unmanned Ground Vehicle System
-      </p>
       <div>
-         <div style="display: inline-flex; margin: 10px;">
-            <div style=" margin: 0px 5px;">
-               <img src="images/l1br.png" height="150" width="250" style="border-radius: 15px;"/>
-               <p style="font-size: x-large;">L1BR</p>
-            </div>
-            <div style=" margin: 0px 5px;">
-               <img src="images/oni.png" height="150" width="250" style="border-radius: 15px;"/>
-               <p style="font-size: x-large;">ONI</p>
-            </div>
-         </div>
+         <img src="images/gazebo-simulations.png" height="352"/>
       </div>
-      -->
-      <img src="images/gazebo-simulations.png" height="352"/>
       <div>
          <img src="images/oni.png" height="150" width="250"/>
          <img src="images/l1br.png" height="150" width="250"/>
