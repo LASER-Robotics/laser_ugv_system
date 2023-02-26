@@ -3,14 +3,11 @@
    <img src="images/gazebo-simulations.png" height="352" width="555">
    <table>
       <tr>
-         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
-         <th><img src="images/gazebo-simulations.png"  height="150" width="250"/></th>
+         <th><img src="images/l1br.png"  height="150" width="250"/></th>
+         <th><img src="images/oni.png"  height="150" width="250"/></th>
       </tr>
    </table>
 </div>
-
-
-<img src="images/gazebo-simulations.png">
 
 <h2>Description<a name="Description"></a></h2>
 
