@@ -11,7 +11,7 @@
 
     <xacro:macro name="piston">
         <gazebo reference="piston_cylinder">
-            <selfCollide>false</selfCollide>
+            <selfCollide>true</selfCollide>
             <mu1>0.1</mu1>
             <mu2>0.1</mu2>
             <kp>10000000.0</kp>
@@ -54,9 +54,9 @@
         </joint>
 
         <gazebo reference="piston_base">
-            <selfCollide>false</selfCollide>
-            <mu1>0.3</mu1>
-            <mu2>0.3</mu2>
+            <selfCollide>true</selfCollide>
+            <mu1>1</mu1>
+            <mu2>1</mu2>
             <kp>10000000.0</kp>
             <kd>10000.0</kd>
         </gazebo>
