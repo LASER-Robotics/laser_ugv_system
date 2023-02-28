@@ -33,8 +33,8 @@
 
         <gazebo reference="tray">
             <selfCollide>true</selfCollide>
-            <mu1 value="1.5" />
-            <mu2 value="1.5" />
+            <mu1 value="2" />
+            <mu2 value="2" />
             <kp value="10000000.0" />
             <kd value="10000" />
             <fdir1 value="0 0 0" />
@@ -48,11 +48,12 @@
                 <!-- <limit effort="1000.0" lower="0" upper="0.3" velocity="0.5"/> -->
         <!-- </joint> -->
 
-        <joint name="joint_tray" type="continuous">
+        <joint name="joint_tray" type="revolute">
                 <parent link="piston_base" />
                 <child link="tray" />
                 <origin rpy="0 0 0" xyz="0 0 -0.08" />
                 <axis xyz="0 0 1"/>
+                <limit effort="100" lower="-6" upper="6" velocity="0.1"/>
         </joint>
     </xacro:macro>
 </robot>

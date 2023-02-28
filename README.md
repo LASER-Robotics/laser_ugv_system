@@ -27,10 +27,6 @@
       <div>
          <img src="images/gazebo-simulations.png" height="352"/>
       </div>
-      <div>
-         <img src="images/oni.png" height="150" width="250"/>
-         <img src="images/l1br.png" height="150" width="250"/>
-      </div>
    </div>
 </div>
 
@@ -49,10 +45,42 @@
    <li><a href="#Description">Description</a></li>
    <li><a href="#Contents">Contents</a></li>
    <li><a href="#Requirements">Requirements</a></li>
+   <li><a href="#L1BR">L1BR</a></li>
+   <li><a href="#Oni">Oni</a></li>
 </ul>
 
 <h2>Requirements<a name="Requirements"></a></h2>
 <ul>
    <li>Ubuntu 22.04</li>
    <li><a href="https://docs.ros.org/en/humble/">ROS 2 Humble</a></li>
+   <li>Gazebo</li>
 </ul>
+
+<h2>L1BR</h2>
+<h3>Overview</h3>
+<p>
+L1BR is a differencial robot who can move around a warehouse to go under the shelves and lift them to other positions.
+</p>
+<div align="center">
+   <div style="margin-bottom: 20px;">
+      <div>
+         <img src="images/l1br.png" height="150" width="250"/>
+      </div>
+   </div>
+</div>
+
+<h2>Oni</h2>
+<h3>Overview</h3>
+<p>
+Oni is a omnidirectional robot that was made for academic purposes so students can test a moveable robot.
+</p>
+<div align="center">
+   <div style="margin-bottom: 20px;">
+      <div>
+         <img src="images/oni.png" height="150" width="250"/>
+      </div>
+   </div>
+</div>
+
+<!-- Instalação -->
+<!-- Como rodar as coisas -->
