@@ -48,10 +48,10 @@
    <li><a href="#L1BR">L1BR</a></li>
    <li><a href="#Oni">Oni</a></li>
    <li><a href="#Installation">Installation</a></li>
-   <li><a href="#Running the simulation">Running the simulation</a></li>
+   <li><a href="#Running_the_simulation">Running the simulation</a></li>
    <ul>
-   <li><a href="#Starting world">Starting world</a></li>
-   <li><a href="#Spawning robot">Spawning robot</a></li>
+   <li><a href="#Starting_world">Starting world</a></li>
+   <li><a href="#Spawning_robot">Spawning robot</a></li>
    <li><a href="#Control">Control</a></li>
    </ul>
 </ul>
@@ -105,8 +105,8 @@ To build the packages go to your workspace and do the following command:
 colcon build
 </pre>
 
-<h2>Running the simulation<a name="Running the simulation"></a></h2>
-<h3>Starting world<a name="Starting world"></a></h3>
+<h2>Running the simulation<a name="Running_the_simulation"></a></h2>
+<h3>Starting world<a name="Starting_world"></a></h3>
 <p>
 Run this command:
 <pre>
@@ -118,7 +118,7 @@ ros2 launch ugv_simulation world_launch.py world:=world_name.world
 </pre>
 </p>
 
-<h3>Spawning robot<a name="Spawning robot"></a></h3>
+<h3>Spawning robot<a name="Spawning_robot"></a></h3>
 <p>
 <ul>
 <li>L1BR</li>
