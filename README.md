@@ -52,6 +52,7 @@
    <ul>
    <li><a href="#Starting world">Starting world</a></li>
    <li><a href="#Spawning robot">Spawning robot</a></li>
+   <li><a href="#Control">Control</a></li>
    </ul>
 </ul>
 
@@ -62,8 +63,7 @@
    <li>Gazebo</li>
 </ul>
 
-<h2>L1BR</h2>
-<!-- <h3>Overview</h3> -->
+<h2>L1BR<a name="L1BR"></a></h2>
 <p>
 L1BR is a differencial robot who can move around a warehouse to go under the shelves and lift them to other positions.
 </p>
@@ -75,8 +75,7 @@ L1BR is a differencial robot who can move around a warehouse to go under the she
    </div>
 </div>
 
-<h2>Oni</h2>
-<!-- <h3>Overview</h3> -->
+<h2>Oni<a name="Oni"></a></h2>
 <p>
 Oni is a omnidirectional robot that was made for academic purposes so students can test a moveable robot.
 </p>
@@ -88,7 +87,7 @@ Oni is a omnidirectional robot that was made for academic purposes so students c
    </div>
 </div>
 
-<h2>Installation</h2>
+<h2>Installation<a name="Installation"></a></h2>
 <p>
 In your workspace inside the <code>src</code> folder do the following command:
 </p>
@@ -106,23 +105,20 @@ To build the packages go to your workspace and do the following command:
 colcon build
 </pre>
 
-<h2>Running the simulation</h2>
-<h3>Starting world</h3>
+<h2>Running the simulation<a name="Running the simulation"></a></h2>
+<h3>Starting world<a name="Starting world"></a></h3>
 <p>
 Run this command:
-<!-- </p> -->
 <pre>
 ros2 launch ugv_simulation world_launch.py
 </pre>
-<!-- <p> -->
 If you want to change the world, go to <code>ugv_system/ugv_simulation/worlds</code> and place the new <code>.world</code> file. Still in the <code>worlds</code> folder, run the following command changing <code>world_name</code> by your world's name.
-<!-- </p> -->
 <pre>
 ros2 launch ugv_simulation world_launch.py world:=world_name.world
 </pre>
 </p>
 
-<h3>Spawning robot</h3>
+<h3>Spawning robot<a name="Spawning robot"></a></h3>
 <p>
 <ul>
 <li>L1BR</li>
@@ -136,5 +132,13 @@ ros2 launch ugv_robots_descriptions l1br_description_launch.py
 </ul>
 <pre>
 ros2 launch ugv_robots_descriptions oni_description_launch.py
+</pre>
+</p>
+
+<h3>Control<a name="Control"></a></h3>
+<p>
+Run this command to control your robot with keyboard:
+<pre>
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args-r /cmd_vel:=/diff_cont/cmd_vel_unstamped
 </pre>
 </p>
