@@ -77,7 +77,7 @@ L1BR is a differencial robot who can move around a warehouse to go under the she
 
 <h2>Oni<a name="Oni"></a></h2>
 <p>
-Oni is a omnidirectional robot that was made for academic purposes so students can test a moveable robot.
+Oni is a omnidirectional robot that was made for academic purposes so students can test a omnidirectional robot.
 </p>
 <div align="center">
    <div style="margin-bottom: 20px;">
@@ -92,7 +92,6 @@ Oni is a omnidirectional robot that was made for academic purposes so students c
 In your workspace inside the <code>src</code> folder do the following command:
 </p>
 <pre>
-sh
 git clone https://github.com/LASER-Robotics/ugv_system.git
 cd ugv_system
 chmod +x setup_enviroment.sh
