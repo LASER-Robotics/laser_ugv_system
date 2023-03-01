@@ -47,6 +47,12 @@
    <li><a href="#Requirements">Requirements</a></li>
    <li><a href="#L1BR">L1BR</a></li>
    <li><a href="#Oni">Oni</a></li>
+   <li><a href="#Installation">Installation</a></li>
+   <li><a href="#Running the simulation">Running the simulation</a></li>
+   <ul>
+   <li><a href="#Starting world">Starting world</a></li>
+   <li><a href="#Spawning robot">Spawning robot</a></li>
+   </ul>
 </ul>
 
 <h2>Requirements<a name="Requirements"></a></h2>
