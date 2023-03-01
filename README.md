@@ -57,7 +57,7 @@
 </ul>
 
 <h2>L1BR</h2>
-<h3>Overview</h3>
+<!-- <h3>Overview</h3> -->
 <p>
 L1BR is a differencial robot who can move around a warehouse to go under the shelves and lift them to other positions.
 </p>
@@ -70,7 +70,7 @@ L1BR is a differencial robot who can move around a warehouse to go under the she
 </div>
 
 <h2>Oni</h2>
-<h3>Overview</h3>
+<!-- <h3>Overview</h3> -->
 <p>
 Oni is a omnidirectional robot that was made for academic purposes so students can test a moveable robot.
 </p>
@@ -82,5 +82,53 @@ Oni is a omnidirectional robot that was made for academic purposes so students c
    </div>
 </div>
 
-<!-- Instalação -->
-<!-- Como rodar as coisas -->
+<h2>Installation</h2>
+<p>
+In your workspace inside the <code>src</code> folder do the following command:
+</p>
+<pre>
+sh
+git clone https://github.com/LASER-Robotics/ugv_system.git
+cd ugv_system
+chmod +x setup_enviroment.sh
+./setup_enviroment.sh
+</pre>
+<p>
+To build the packages go to your workspace and do the following command:
+</p>
+<pre>
+colcon build
+</pre>
+
+<h2>Running the simulation</h2>
+<h3>Starting world</h3>
+<p>
+Run this command:
+<!-- </p> -->
+<pre>
+ros2 launch ugv_simulation world_launch.py
+</pre>
+<!-- <p> -->
+If you want to change the world, go to <code>ugv_system/ugv_simulation/worlds</code> and place the new <code>.world</code> file. Still in the <code>worlds</code> folder, run the following command changing <code>world_name</code> by your world's name.
+<!-- </p> -->
+<pre>
+ros2 launch ugv_simulation world_launch.py world:=world_name.world
+</pre>
+</p>
+
+<h3>Spawning robot</h3>
+<p>
+<ul>
+<li>L1BR</li>
+</ul>
+<pre>
+ros2 launch ugv_robots_descriptions l1br_description_launch.py
+</pre>
+
+<ul>
+<li>Oni</li>
+</ul>
+<pre>
+ros2 launch ugv_robots_descriptions oni_description_launch.py
+</pre>
+</p>
