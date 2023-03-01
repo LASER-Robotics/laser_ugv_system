@@ -48,10 +48,10 @@
    <li><a href="#L1BR">L1BR</a></li>
    <li><a href="#Oni">Oni</a></li>
    <li><a href="#Installation">Installation</a></li>
-   <li><a href="#Running_the_simulation">Running the simulation</a></li>
+   <li><a href="#RunningTheSimulation">Running the simulation</a></li>
    <ul>
-   <li><a href="#Starting_world">Starting world</a></li>
-   <li><a href="#Spawning_robot">Spawning robot</a></li>
+   <li><a href="#StartingWorld">Starting world</a></li>
+   <li><a href="#SpawningRobot">Spawning robot</a></li>
    <li><a href="#Control">Control</a></li>
    </ul>
 </ul>
@@ -105,8 +105,8 @@ To build the packages go to your workspace and do the following command:
 colcon build
 </pre>
 
-<h2>Running the simulation<a name="Running_the_simulation"></a></h2>
-<h3>Starting world<a name="Starting_world"></a></h3>
+<h2>Running the simulation<a name="RunningTheSimulation"></a></h2>
+<h3>Starting world<a name="StartingWorld"></a></h3>
 <p>
 Run this command:
 <pre>
@@ -118,7 +118,7 @@ ros2 launch ugv_simulation world_launch.py world:=world_name.world
 </pre>
 </p>
 
-<h3>Spawning robot<a name="Spawning_robot"></a></h3>
+<h3>Spawning robot<a name="SpawningRobot"></a></h3>
 <p>
 <ul>
 <li>L1BR</li>
@@ -138,7 +138,16 @@ ros2 launch ugv_robots_descriptions oni_description_launch.py
 <h3>Control<a name="Control"></a></h3>
 <p>
 Run this command to control your robot with keyboard:
+<ul>
+<li>L1BR</li>
+</ul>
 <pre>
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args-r /cmd_vel:=/diff_cont/cmd_vel_unstamped
+</pre>
+<ul>
+<li>Oni</li>
+</ul>
+<pre>
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args-r /cmd_vel:=/oni/cmd_vel
 </pre>
 </p>
