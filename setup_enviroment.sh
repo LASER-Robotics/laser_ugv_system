@@ -12,6 +12,8 @@ cd ..
 
 cd ..
 
+sudo rosdep init
+
 rosdep update
 
 rosdep install --from-paths src --rosdistro humble -y
