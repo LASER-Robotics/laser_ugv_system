@@ -12,6 +12,8 @@ cd ..
 
 cd ..
 
+rosdep update
+
 rosdep install --from-paths src --rosdistro humble -y
 
 colcon build
