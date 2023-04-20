@@ -16,7 +16,7 @@ sudo rosdep init
 
 rosdep update
 
-rosdep install --from-paths src --rosdistro humble -y
+rosdep install -i --from-path src --rosdistro humble -y
 
 colcon build
 
