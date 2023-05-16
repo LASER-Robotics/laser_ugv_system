@@ -8,6 +8,8 @@ sudo apt -y install ros-humble-ros2-control ros-humble-ros2-controllers ros-humb
 
 echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc
 
+echo "export ROS_LOCALHOST_ONLY=1" >> ~/.bashrc
+
 cd ..
 
 cd ..
