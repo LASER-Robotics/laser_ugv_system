@@ -1,0 +1,58 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/gabriel/workspace/devel/include/**",
+        "/home/gabriel/mrs_workspace/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/gabriel/modules_workspace/devel/include/**",
+        "/home/gabriel/modules_workspace/src/uav_modules/ros_packages/aloam/include/**",
+        "/home/gabriel/modules_workspace/src/uav_modules/ros_packages/bluefox2/include/**",
+        "/home/gabriel/modules_workspace/src/uav_modules/ros_packages/camera_base/include/**",
+        "/home/gabriel/workspace/src/competition_strategy/include/**",
+        "/home/gabriel/workspace/src/example_ros_packages/ros_packages/example_ros_pluginlib/example_manager/include/**",
+        "/home/gabriel/modules_workspace/src/uav_modules/ros_packages/hector_slam/include/**",
+        "/home/gabriel/workspace/src/l_rob/include/**",
+        "/home/gabriel/workspace/src/laser_prc/ros_packages/laser_lib/include/**",
+        "/home/gabriel/workspace/src/laser_prc/ros_packages/laser_vision/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mavros/libmavconn/include/**",
+        "/home/gabriel/mrs_workspace/src/simulation/ros_packages/mavlink_sitl_gazebo/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mavros/mavros/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mavros/mavros_msgs/include/**",
+        "/home/gabriel/mrs_workspace/src/simulation/ros_packages/mrs_gazebo_common_resources/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mrs_lib/include/**",
+        "/home/gabriel/modules_workspace/src/uav_modules/ros_packages/mrs_optic_flow/include/**",
+        "/home/gabriel/modules_workspace/src/uav_modules/ros_packages/mrs_pcl_tools/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mrs_rviz_plugins/include/**",
+        "/home/gabriel/modules_workspace/src/uav_modules/ros_packages/mrs_serial/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mrs_uav_controllers/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mrs_uav_general/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mrs_uav_managers/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mrs_uav_odometry/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mrs_uav_status/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mrs_uav_trackers/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mrs_uav_trajectory_generation/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/thirdparty/nlopt_ros/include/**",
+        "/home/gabriel/modules_workspace/src/uav_modules/ros_packages/ouster/include/**",
+        "/home/gabriel/modules_workspace/src/uav_modules/ros_packages/realsense/ros_packages/realsense-ros/realsense2_camera/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/mavros/test_mavros/include/**",
+        "/home/gabriel/mrs_workspace/src/uav_core/ros_packages/thirdparty/tf2/tf2/include/**",
+        "/home/gabriel/modules_workspace/src/uav_modules/ros_packages/mrs_utils/tf_reconfigure/include/**",
+        "/home/gabriel/modules_workspace/src/uav_modules/ros_packages/usb_cam/include/**",
+        "/home/gabriel/workspace/src/example_ros_packages/ros_packages/example_ros_vision/include/**",
+        "/home/gabriel/workspace/src/example_ros_packages/ros_packages/example_ros_uav/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
