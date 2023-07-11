@@ -120,7 +120,7 @@ Run this command to control your robot with keyboard:
 <li>L1BR</li>
 </ul>
 <pre>
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py --ros-args-r /cmd_vel:=/l1br/cmd_vel
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 </pre>
 <ul>
 <li>Oni</li>
