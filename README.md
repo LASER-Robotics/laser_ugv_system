@@ -80,7 +80,7 @@ chmod +x setup_enviroment.sh
 To build the packages go to your workspace and do the following command:
 </p>
 <pre>
-colcon build
+catkin build
 </pre>
 
 <h2>Running the simulation<a name="RunningTheSimulation"></a></h2>
