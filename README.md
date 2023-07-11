@@ -1,25 +1,3 @@
-<!--
-<img src="images/Logo_Laser.png" height="352"/>
-<p style="
-   margin: 20px 0px;
-   font-size: xx-large;
-" >
-   Unmanned Ground Vehicle System
-</p>
-<div>
-   <div style="display: inline-flex; margin: 10px;">
-      <div style=" margin: 0px 5px;">
-         <img src="images/l1br.png" height="150" width="250" style="border-radius: 15px;"/>
-         <p style="font-size: x-large;">L1BR</p>
-      </div>
-      <div style=" margin: 0px 5px;">
-         <img src="images/oni.png" height="150" width="250" style="border-radius: 15px;"/>
-         <p style="font-size: x-large;">ONI</p>
-      </div>
-   </div>
-</div>
--->
-
 <h1>Laser Unmanned Ground Vehicle System</h1>
 
 <div align="center">
@@ -58,8 +36,8 @@
 
 <h2>Requirements<a name="Requirements"></a></h2>
 <ul>
-   <li>Ubuntu 22.04</li>
-   <li><a href="https://docs.ros.org/en/humble/">ROS 2 Humble</a></li>
+   <li>Ubuntu 20.04</li>
+   <li><a href="https://docs.ros.org/en/noetic/">ROS Noetic</a></li>
    <li>Gazebo</li>
 </ul>
 
@@ -109,11 +87,11 @@ colcon build
 <p>
 Run this command:
 <pre>
-ros2 launch ugv_simulation world_launch.py
+roslaunch ugv_simulation world_launch.launch
 </pre>
 If you want to change the world, go to <code>ugv_system/ugv_simulation/worlds</code> and place the new <code>.world</code> file. Still in the <code>worlds</code> folder, run the following command changing <code>world_name</code> by your world's name.
 <pre>
-ros2 launch ugv_simulation world_launch.py world:=world_name.world
+roslaunch ugv_simulation world_launch.launch world:=world_name.world
 </pre>
 </p>
 
@@ -123,14 +101,14 @@ ros2 launch ugv_simulation world_launch.py world:=world_name.world
 <li>L1BR</li>
 </ul>
 <pre>
-ros2 launch ugv_robots_descriptions l1br_description_launch.py
+roslaunch ugv_robots_descriptions l1br_description_launch.py
 </pre>
 
 <ul>
 <li>Oni</li>
 </ul>
 <pre>
-ros2 launch ugv_robots_descriptions oni_description_launch.py
+roslaunch ugv_robots_descriptions oni_description_launch.py
 </pre>
 </p>
 
@@ -141,12 +119,12 @@ Run this command to control your robot with keyboard:
 <li>L1BR</li>
 </ul>
 <pre>
-ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args-r /cmd_vel:=/diff_cont/cmd_vel_unstamped
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py --ros-args-r /cmd_vel:=/l1br/cmd_vel
 </pre>
 <ul>
 <li>Oni</li>
 </ul>
 <pre>
-ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args-r /cmd_vel:=/oni/cmd_vel
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py --ros-args-r /cmd_vel:=/oni/cmd_vel
 </pre>
 </p>
