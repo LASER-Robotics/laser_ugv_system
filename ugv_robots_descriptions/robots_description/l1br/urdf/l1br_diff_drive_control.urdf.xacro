@@ -32,11 +32,15 @@
 
       <odometrySource>1</odometrySource>
 
-      <publishWheelTF>true</publishWheelTF>
+      <publishWheelTF>false</publishWheelTF>
 
       <publishOdom>true</publishOdom>
 
-      <publishWheelJointState>true</publishWheelJointState>
+      <publishOdomTF>true</publishOdomTF>
+
+      <publishWheelJointState>false</publishWheelJointState>
+
+      <publishTF>1</publishTF>
 
       <legacyMode>true</legacyMode>
     </plugin>
