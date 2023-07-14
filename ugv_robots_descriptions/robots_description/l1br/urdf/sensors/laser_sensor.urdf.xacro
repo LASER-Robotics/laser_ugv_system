@@ -71,9 +71,9 @@
                     </noise>
                 </ray>
                 <plugin name="laser_link_gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
-                    <!-- <ros>
+                    <ros>
                         <remapping>~/out:=${topic}</remapping>                                                                                                                          
-                    </ros> -->
+                    </ros>
                     <output_type>sensor_msgs/LaserScan</output_type>
                     <topicName>${topic}</topicName>
                     <frameName>laser_link</frameName>
