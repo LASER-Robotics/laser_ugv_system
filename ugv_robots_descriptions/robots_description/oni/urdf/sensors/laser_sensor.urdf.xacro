@@ -1,3 +1,4 @@
+<?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
     <xacro:property name="M_PI" value="3.1415926535897931" />
     <xacro:macro name="laser_sensor" params="update_rate ray_count min_angle max_angle min_range max_range pos_x pos_y pos_z topic">
@@ -11,7 +12,7 @@
                     <color rgba="1 1 1 1"/>
                 </material>
             </visual>
-            <collision>
+            <!-- <collision>
                 <origin xyz="0.003 -0.003 -0.027" rpy="0 0 ${M_PI/2}"/>
                 <geometry>
                     <cylinder radius="0.0375" length="0.04"/>
@@ -23,16 +24,16 @@
                 <inertia ixx="${(2/5) * 0.1 * (0.0375 * 0.0375)}" ixy="0" ixz="0"
                         iyy="${(2/5) * 0.1 * (0.0375 * 0.0375)}" iyz="0"
                         izz="${(2/5) * 0.1 * (0.0375 * 0.0375)}" />
-            </inertial>
+            </inertial> -->
         </link>
 
-        <joint name="base_link_to_base_link" type="fixed">
+        <joint name="laser_link_to_base_link" type="fixed">
             <parent link="base_link"/>
             <child link="laser_link"/>
             <origin xyz="${pos_x} ${pos_y} ${pos_z}" rpy="0 0 0"/>
         </joint>
 
-        <gazebo reference="laser_link">  
+        <!-- <gazebo reference="laser_link">  
             <visual>  
                 <material>
                     <ambient>0.003 0.639 0.223 1.0</ambient>  
@@ -41,14 +42,14 @@
                     <emissive>0.0 0.0 0.0 0.0</emissive>  
                 </material>
             </visual> 
-        </gazebo>
+        </gazebo> -->
 
         <gazebo reference="laser_link">
-            <sensor type="ray" name="base_link_head_hokuyo_sensor">
+            <sensor type="ray" name="laser_link_head_hokuyo_sensor">
                 <always_on>true</always_on>
                 <update_rate>${update_rate}</update_rate>
-                <pose>0 0 0 0 0 0</pose>
-                <visualize>false</visualize>
+                <!-- <pose>0 0 0 0 0 0</pose> -->
+                <visualize>true</visualize>
                 <ray>
                     <scan>
                         <horizontal>
@@ -69,13 +70,13 @@
                         <stddev>0.01</stddev>
                     </noise>
                 </ray>
-                <plugin name="base_link_gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_ray_sensor.so">
+                <plugin name="laser_link_gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
                     <ros>
-                        <remapping>~/out:=${topic}</remapping>                                                                                                                           
+                        <remapping>~/out:=${topic}</remapping>                                                                                                                          
                     </ros>
                     <output_type>sensor_msgs/LaserScan</output_type>
                     <topicName>${topic}</topicName>
-                    <frame_name>laser_link</frame_name>
+                    <frameName>laser_link</frameName>
                     <output_type>sensor_msgs/LaserScan</output_type>
                 </plugin>
             </sensor>
