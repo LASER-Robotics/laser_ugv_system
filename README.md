@@ -72,7 +72,7 @@ In your workspace inside the <code>src</code> folder do the following command:
 <pre>
 git clone https://github.com/LASER-Robotics/ugv_system.git
 cd ugv_system
-git checkout Ros-Noetic
+git checkout ros-Noetic
 chmod +x setup_enviroment.sh
 ./setup_enviroment.sh
 </pre>
