@@ -23,5 +23,10 @@
 
     <node name="l1br_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf 
     -param robot_description -model l1br -x $(arg x) -y $(arg y) -z $(arg z) -Y $(arg yaw)"></node>
+    
+    <node name="l1br_pose_ekf" pkg="robot_pose_ekf" type="robot_pose_ekf">
+      <rosparam file="$(find ugv_simulation)/config/ekf_l1br.yaml" />
+    </node>
+
 
 </launch>
